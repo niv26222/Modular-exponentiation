@@ -18,6 +18,5 @@ def exponentMod(A, B, C):
     # If B is Odd 
     else: 
         y = A % C 
-        y = (y * exponentMod(A, B - 1,  
-                             C) % C) % C 
+        y = (y * exponentMod(A, B - 1, C) % C) % C 
     return ((y + C) % C) 
